@@ -44,7 +44,7 @@ pytest
 - Видео/трейсы/скриншоты: `artifacts/playwright/<run_id>/`
 
 ## CI
-Файл `.github/workflows/tests.yml` запускает тесты на `ubuntu-latest`, ставит Python 3.12, Playwright (chromium), выполняет `pytest` и всегда загружает артефакты.
+Файл `.github/workflows/tests.yml` запускает тесты на `ubuntu-22.04`, ставит Python 3.12, Playwright (chromium), выполняет `pytest` и всегда загружает артефакты.
 
 ## Как добавить новый Page Object
 - Создайте файл в `src/ui/pages/<name>_page.py`, наследуйтесь от `BasePage`, принимайте `page`, `base_url`, `timeout_ms`.
