@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Pytest
+.pytest_cache/
+.cache/
+
+# Playwright
+playwright-report/
+test-results/
+.playwright/
+
+# Environments
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.DS_Store
+
+# Artifacts
+artifacts/allure-results/*
+artifacts/logs/*
+artifacts/playwright/*
+!artifacts/allure-results/.gitkeep
+!artifacts/logs/.gitkeep
+!artifacts/playwright/.gitkeep

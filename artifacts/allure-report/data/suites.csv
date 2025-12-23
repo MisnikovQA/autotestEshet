@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Dec 23 14:08:53 IST 2025","Tue Dec 23 14:08:56 IST 2025","2850","tests.ui","test_smoke_home","","","","Главная страница Eshet открывается (HTTP 200-399)",""
