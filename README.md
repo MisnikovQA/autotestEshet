@@ -31,6 +31,20 @@ pytest
 - Запуск без параллели: `pytest -n0`
 - Сборка отчёта Allure (установите allure CLI локально): `allure serve artifacts/allure-results`
 
+
+## Просмотр отчетов из GitHub Actions
+В CI Allure **не открывается сам**, но:
+1. CI сохраняет папку `artifacts`
+2. В GitHub Actions заходите в run
+3. Скачиваете `artifacts.zip`
+4. Распаковываете
+5. Локально выполняете:
+```powershell
+'allure generate artifacts\allure-results -o artifacts\allure-report --clean'
+'allure open artifacts\allure-report'
+```
+
+
 ## Структура
 - `src/config/settings.py` — загрузка переменных окружения, выбор `BASE_URL`.
 - `src/core/logger.py` — JSONL-логгер с `run_id`, пишет в `artifacts/logs`.
